@@ -4,6 +4,10 @@ package task1;
 public class RailFenceCipher {
 
     public static String encode(final String text, final int number) {
+        if (number < 2) {
+            return text;
+        }
+
         final StringBuilder result = new StringBuilder();
         boolean check = false;
         int j = 0;
@@ -32,6 +36,10 @@ public class RailFenceCipher {
     }
 
     public static String decode(final String text, final int number) {
+        if (number < 2) {
+            return text;
+        }
+
         final StringBuilder result = new StringBuilder();
         boolean check = false;
         int j = 0;

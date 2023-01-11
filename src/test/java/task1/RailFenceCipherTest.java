@@ -38,4 +38,20 @@ class RailFenceCipherTest {
         assertEquals(expectedValue, RailFenceCipher.decode(inputValue, number));
     }
 
+    @Test
+    void encodeEmptyTest() {
+        int number = 5;
+        String inputValue = "";
+        String expectedValue = "";
+        assertEquals(expectedValue, RailFenceCipher.encode(inputValue, number));
+    }
+
+    @Test
+    void decodeEmptyTest() {
+        int number = 5;
+        String inputValue = "";
+        String expectedValue = "";
+        assertEquals(expectedValue, RailFenceCipher.decode(inputValue, number));
+    }
+
 }
